@@ -306,15 +306,15 @@ where
         }
     };
 
-    if !long_structs {
-        ensure!(
-            0 == s_desc_size,
-            assumption_failed(format!(
-                "outside long mode, block group desc size must be zero, not {}",
-                s_desc_size
-            ))
-        );
-    }
+    // if !long_structs {
+    //     ensure!(
+    //         0 == s_desc_size,
+    //         assumption_failed(format!(
+    //             "outside long mode, block group desc size must be zero, not {}",
+    //             s_desc_size
+    //         ))
+    //     );
+    // }
 
     ensure!(
         1 == s_rev_level,
